@@ -37,7 +37,17 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+        cout << "2. Test liczby pierwszej " << endl;
         cin >> wyjscie;
+
+        if (wyjscie == 2) {
+            if (CzyPierwsza(a)) {
+                cout << "Liczba jest pierwsza." << endl;
+            }
+            else {
+                cout << "Liczba NIE jest pierwsza." << endl;
+            }
+        }
     } while(wyjscie != 0);
     return 0;
 }
