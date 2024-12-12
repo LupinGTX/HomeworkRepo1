@@ -2,11 +2,23 @@
 
 using namespace std;
 
+int Silnia(int a) {
+    int m = 1;
+
+    for (int i = 1; i <= a; i++) {
+        m *= i;
+    }
+
+    return m;
+}
+
 int main() {
-    int a, b;
+    int a;
     cout << "Podaj liczbe calkowita ";
-    cin >> a >> b;
+    cin >> a;
+
     int wyjscie;
+
     do {
         cout << endl;
         cout << endl;
@@ -15,5 +27,6 @@ int main() {
         cout << "0. Wyjscie" << endl;
         cin >> wyjscie;
     } while(wyjscie != 0);
+
     return 0;
 }
